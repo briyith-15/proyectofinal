@@ -5,7 +5,8 @@ function ListaPeliculas() {
             {datos.peliculas.map(peliculas => (
                 <div key={peliculas.id}>
                     <h3>{peliculas.titulo}</h3>
-                    <p> {peliculas.año}</p>
+                    <p> Año: {peliculas.año}</p>
+                    <p>Genero: {peliculas.genero}</p>
                 </div>
             ))}
         </div>
