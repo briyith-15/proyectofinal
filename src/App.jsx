@@ -12,7 +12,7 @@ import Footer from './components/footer'
 // Mis paginas
 import Caracteristicas from './pages/caracteristicas'
 import Contacto from './pages/contacto'
-
+import ListaPeliculas from './components/peliculas'
 
 function App() {
   return (
@@ -32,6 +32,10 @@ function App() {
           <Route 
             path='/contacto'
             element={<Contacto />}
+          />
+          <Route 
+            path='/peliculas'
+            element={<ListaPeliculas />}
           />
         </Routes>
 
