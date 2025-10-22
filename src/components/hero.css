@@ -1,28 +1,90 @@
+/* 🌤️ SECCIÓN HERO */
 .hero {
-  background: #007BFF;
-  color: white;
+  background-color: #cde7f0; /* mismo celeste pastel del header */
+  color: #2a3d52; /* gris azulado para contraste */
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
 }
 
+/* 📦 CONTENEDOR CENTRAL */
+.hero .container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* 🎬 TÍTULO PRINCIPAL */
 .hero h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  color: #1f3549;
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.4);
 }
 
+/* 🎞️ SUBTÍTULO */
 .hero p {
   font-size: 1.2rem;
-  margin: 1rem 0;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #2a3d52;
 }
 
+/* 🍿 BOTÓN HERO */
 .btn_hero {
-  background: white;
-  color: #007BFF;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
+  background-color: #91d1e3;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  padding: 1rem 2.2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* ✨ EFECTO HOVER */
 .btn_hero:hover {
-  background: #e6e6e6;
+  background-color: #7bc4d9;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 136, 169, 0.3);
 }
+
+/* 🌈 EFECTO SUAVE DE LUZ EN FONDO */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3), transparent 70%);
+  animation: shine 6s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+@keyframes shine {
+  0% { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(1.1); opacity: 1; }
+}
+
+/* 📱 RESPONSIVO */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .btn_hero {
+    font-size: 1rem;
+    padding: 0.9rem 1.8rem;
+  }
+}
+

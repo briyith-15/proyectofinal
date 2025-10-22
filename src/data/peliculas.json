@@ -2,33 +2,108 @@
   "peliculas": [
     {
         "id": 1,
-        "titulo": "Barbie",
-        "año": 2023,
-        "genero": "Comedia"
+        "titulo": "Los inocentes",
+        "año": 2025,
+        "genero": "Drama",
+        "imagen":"Losinocentes.jpg"
     },
     {
         "id": 2,
-        "titulo": "Elementos",
-        "año": 2023,
-        "genero": "Animación"
+        "titulo": "The Batman",
+        "año": 2022,
+        "genero": "Acciòn",
+        "imagen":"TheBatman.jpg"
     },
     {
         "id": 3,
-        "titulo": "Que paso ayer",
-        "año": "2025",
-        "genero": "Comedia"
+        "titulo": "Minions: Rise of Gru",
+        "año": 2022,
+        "genero": "Comedia",
+        "imagen":"minions.jpg"
     },
     {
         "id": 4,
         "titulo": "La vida es bella",
         "año": "1997",
-        "genero": "Drama"
+        "genero": "Drama",
+        "imagen":"Lavidaesbella.jpg"
     },
     {
         "id": 5,
         "titulo": "El padrino",
         "año": "1972",
-        "genero": "Drama"
+        "genero": "Drama",
+        "imagen":"Elpadrino.jpg"
+    },
+    {
+        "id":6,
+        "titulo":"Spider-Man",
+        "año":2021,
+        "genero": "Accion",
+        "imagen":"Spider-Man.jpg"
+    },
+    {
+        "id":7,
+        "titulo":"toy story 4",
+        "año":2019,
+        "genero":"Comedia",
+        "imagen":"toystory4.jpg"
+    },
+    {
+        "id":8,
+        "titulo":"Inception",
+        "año":2010,
+        "genero":"Ciencia Ficcion",
+        "imagen":"Inception.jpg"
+    },
+    {
+        "id":9,
+        "titulo":"The Dark Knight",
+        "año":2008,
+        "genero":"Accion",
+        "imagen":"TheDarkKnight.jpg"
+    },
+    {
+        "id":10,
+        "titulo":"Forrest Gump",
+        "año":1994,
+        "genero":"Drama",
+        "imagen":"ForrestGump.jpg"
+    },
+    {
+        "id":11,
+        "titulo":"The Matrix",
+        "año":1999,
+        "genero":"Ciencia Ficcion",
+        "imagen":"TheMatrix.jpg"
+    },
+    {
+        "id":12,
+        "titulo":"Gladiator",
+        "año":2000,
+        "genero":"Accion",
+        "imagen":"Gladiator.jpg"
+    },
+    {
+        "id":13,
+        "titulo":"The Shawshank Redemption",
+        "año":1994,
+        "genero":"Drama",
+        "imagen":"TheShawshankRedemption.jpg"
+    },
+    {
+        "id":14,
+        "titulo":"Interstellar",
+        "año":2014,
+        "genero":"Ciencia Ficcion",
+        "imagen":"Interstellar.jpg"
+    },
+    {
+        "id":15,
+        "titulo":"The Lion King",
+        "año":1994,
+        "genero":"Animacion",
+        "imagen":"TheLionKing.jpg"
     }
   ]
 }

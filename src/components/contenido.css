@@ -1,49 +1,96 @@
-/* Features */
+/* 🎞️ SECCIÓN PRINCIPAL */
 .features {
-  padding: 3rem 2rem;
-  background: #fff;
+  background-color: #cde7f0; /* mismo tono pastel celeste */
+  color: #2a3d52; /* gris azulado para contraste */
+  padding: 5rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
+/* 📦 CONTENEDOR */
+.features .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* 🎬 TÍTULO PRINCIPAL */
 .features h3 {
-  text-align: center;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1f3549;
+  margin-bottom: 2.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.4);
 }
 
+/* 🧩 LISTA DE CARACTERÍSTICAS */
 .feature-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
+/* 🎥 TARJETAS INDIVIDUALES */
 .feature {
-  background: #f1f1f1;
-  padding: 1rem;
-  border-radius: 5px;
+  background-color: #eaf6fb; /* tono más claro del fondo */
+  border: 2px solid #a6d6e8;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* ✨ EFECTO AL PASAR EL RATÓN */
+.feature:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(91, 173, 204, 0.3);
+}
+
+/* 🎞️ TÍTULO DE CADA BLOQUE */
 .feature h4 {
-  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: #004f7c;
+  margin-bottom: 1rem;
+  font-weight: 700;
 }
 
-/* Footer */
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
+/* 🍿 DESCRIPCIÓN */
+.feature p {
+  font-size: 1rem;
+  color: #324d5c;
+  line-height: 1.6;
 }
 
-/* Responsive */
-@media (min-width: 768px) {
-  .feature-list {
-    flex-direction: row;
-    justify-content: space-between;
+/* 🌈 EFECTO DE BRILLO SUAVE EN EL FONDO */
+.features::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -40%;
+  width: 180%;
+  height: 180%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3), transparent 70%);
+  animation: luz 7s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+@keyframes luz {
+  0% { opacity: 0.6; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.1); }
+}
+
+/* 📱 RESPONSIVO */
+@media (max-width: 768px) {
+  .features h3 {
+    font-size: 2rem;
   }
-
   .feature {
-    flex: 1;
-    margin: 0 0.5rem;
+    padding: 1.5rem;
+  }
+  .feature h4 {
+    font-size: 1.2rem;
   }
 }
+
